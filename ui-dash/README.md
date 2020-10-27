@@ -1,4 +1,4 @@
-# vuetify
+# ui-dash
 
 ## Project setup
 ```
