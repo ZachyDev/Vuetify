@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    
+  <v-app id="app">
+    <Navbar />
     <v-content>
       <router-view></router-view>
     </v-content>
@@ -8,13 +8,12 @@
 </template>
 
 <script>
-
-
+import Navbar from '@/components/Navbar.vue';
 export default {
   name: 'App',
 
   components: {
-  
+    Navbar,
   },
 
   data: () => ({
@@ -22,3 +21,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  #app{
+    background-color:#ddd;
+  }
+</style>
